@@ -1,0 +1,145 @@
+
+      .admin{
+  
+display: block;
+         
+      }
+
+      .panels{
+          box-sizing: border-box;
+        display: flex;
+        position: absolute;
+        top: 120px;
+        left: 30px;
+        right: 30px;
+          flex-wrap: wrap;
+          background-color:hsl(179, 2%, 96%);
+          min-height: 50vh;
+          margin: auto;
+          text-align: center;
+          padding: 1em;
+          border-radius: 20px;
+          justify-content: space-between;
+      }
+
+      .news-panel{
+        box-shadow: 2px 2px 2px 2px #888888;
+        border-radius: 10px;
+        padding: 5px;
+        width: 40%;
+        height: fit-content;
+      }
+      .news-panel:hover{
+          width:41%;
+          
+      }
+
+      .news-panel h2{
+          margin: auto;
+          text-align: center;
+          color:#104634;
+      }
+.news-panel ul{
+    padding: 2px;
+    font-size: 1.5em;
+} 
+.news-panel ul li{
+    margin: .7em;
+    padding: .5em;
+    height: 1.5em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px #888888;
+
+   
+} 
+
+      .news-edit-panel{
+        padding: 5px;
+        width: 40%;
+      }
+.news{
+  margin:auto;
+  text-align:center;
+     min-height:300px;
+      width:70%;
+}
+  .news ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+padding:0;
+    
+  }
+
+  .news ul li{
+    list-style: none;
+   border: 1px solid wheat;
+    padding:0;
+    margin-bottom: 1em;
+    min-width: 15.4em;
+  }
+  .news ul li a{
+    margin: 0;
+    padding:0;
+    width:15em;
+    color: black;
+  }
+  .news ul li a:hover{
+  text-decoration: underline;
+  }
+.news h2{
+
+  padding: 0;
+font-size: 2em;
+}
+.news p{
+    margin: 8px;
+    padding:8px;
+    color: black;
+  }
+  @media only screen and (max-width: 800px) {
+    .panels{
+        box-sizing: border-box;
+      display: block;
+      padding: 1em;
+
+  
+    }
+    
+    .news-panel{
+    
+        width: 100%;
+      }
+      .news-panel:hover{
+        width:100%;
+        
+    }
+    .news{
+        margin:auto;
+        text-align:center;
+           min-height:400px;
+            width:100%;
+      }
+      .news h2{
+
+        padding: 0;
+      font-size: 1.2em;
+      }
+      .news-edit-panel{
+        padding: 5px;
+        width: 100%;
+      }
+.news{
+  margin:auto;
+  text-align:center;
+     min-height:400px;
+      width:100%;
+}
+.news ul li{
+    list-style: none;
+   border: 1px solid wheat;
+    padding:0;
+    margin-bottom: 1em;
+    min-width: 100%;
+  }
+  }

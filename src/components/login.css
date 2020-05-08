@@ -1,0 +1,84 @@
+.login{
+    text-align: center;
+    margin: auto;
+}
+label {
+  font-size: 20px;
+}
+div {
+  margin-bottom: 30px;
+}
+input,
+textarea {
+  border: 0;
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+  width: 200px;
+}
+form,
+fieldset {
+  border: 0;
+}
+
+button {
+  background: #999;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  font-size: 14px;
+  height: 40px;
+  width: 190px;
+  text-transform: uppercase;
+}
+button:hover{
+    background: blue;
+}
+
+button:active{
+  height: 42px;
+  width: 200px;
+
+}
+
+select {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid gray;
+  box-shadow: none;
+  color: #666;
+  padding: 10px 0;
+  width: 200px;
+  -webkit-appearance: none;
+}
+.select-wrapper {
+position: relative;
+width: 200px;
+}
+
+.select-wrapper:after {
+content: '< >';
+color: #666;
+font-size: 14px;
+top: 8px;
+right: 0;
+transform: rotate(90deg);
+position: absolute;
+Z-index: -1;
+}
+
+input:valid,
+textarea:valid {
+border-bottom-color: green;
+}
+input:invalid,
+textarea:invalid {
+border-bottom-color: red;
+}
+
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}

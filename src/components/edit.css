@@ -1,0 +1,84 @@
+.edit-news-panel{
+  padding-top: 20px;
+    text-align: center;
+    margin: auto;
+   
+}
+
+.heading a{
+text-decoration: none;
+  font-size: 1em;
+  width: 4em;
+  height: 2em;
+background-color: blue;
+color: white;
+border-radius: 3px;
+text-align: center;
+}
+.heading span{
+    margin-left: 3em;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+label {
+    font-size: 20px;
+  }
+  
+  input,
+  textarea {
+    border: 0;
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+    min-width: 300px;
+  }
+  form,
+  fieldset {
+    border: 0;
+  }
+  
+  
+  button {
+    background: #999;
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    height: 40px;
+    width: 190px;
+    text-transform: uppercase;
+  }
+  button:hover{
+      background: blue;
+  }
+  
+  button:active{
+    height: 42px;
+    width: 200px;
+  
+  }
+  
+  select {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+    box-shadow: none;
+    color: #666;
+    padding: 10px 0;
+    width: 200px;
+    -webkit-appearance: none;
+  }
+  .select-wrapper {
+  position: relative;
+  width: 200px;
+  }
+
+  input:valid,
+  textarea:valid {
+  border-bottom-color: green;
+  }
+  input:invalid,
+  textarea:invalid {
+  border-bottom-color: red;
+  }

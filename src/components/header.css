@@ -1,0 +1,24 @@
+.logo{
+float: left;
+font-size: 2em;
+font-weight: bolder;
+padding-left:2em;
+
+}
+.header-bar{
+    display: block;
+    background-color:lightgray;
+    box-sizing: border-box;
+    margin: 20px;
+
+}
+.header-bar ul{
+    list-style: none;
+display: flex;
+    float: right;
+    padding-right: 2em; 
+}
+.header-bar ul li{
+margin-right: .8em;
+    padding-right: 1em; 
+}
