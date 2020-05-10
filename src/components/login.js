@@ -33,20 +33,26 @@ headers: {
 body: JSON.stringify(this.state)
         })
         .then(response => response.json())
-        .then(data =>{ this.setState({
+        .then(data =>{ 
+          if(data.status ==="error"){
+            this.setState({
+              loginStatus : data.status,
+              loginMessage: data.message,
+          })
+          }
+          else{
+            this.setState({
             loginStatus : data.status,
             loginMessage: data.message,
             token: data.data.token,
             userId: data.data.user
-        }) })
-        .then( ()=> {if(this.state.token !== undefined){localStorage.setItem('token', this.state.token);
+        });
+        //save user datat 
+        localStorage.setItem('token', this.state.token);
         localStorage.setItem('userId', this.state.userId);
     history.push('/admin');
-    } 
-    else{
-          console.log(this.state);  
-    }
-    })
+          }
+          })
         .catch((err)=>{
             console.log(err);
         })

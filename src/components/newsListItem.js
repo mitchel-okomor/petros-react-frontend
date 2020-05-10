@@ -30,10 +30,12 @@ headers: {
 
 
    return (<li>
-    <Link to="#"> {props.article.title}</Link>
-                <br />
 <em>{props.article.date_created}</em><br />
-<img src={"http://localhost:4000/" + props.article.image_url} />
+<img src={"http://localhost:4000/" + props.article.image_url} alt="article"/> <br />
+<Link to="#"> {props.article.title}</Link>
+                <br />
+              <p>{props.article.description}</p>  
+                <br />
 <div className="list-action"> <Link to={"/edit/" + props.article.id} article={props.article}><button id="edit">Edit</button></Link> <span><button id="delete" onClick={()=>{ 
  if(window.confirm('Delete the item?')) {
         //Logic to delete the item

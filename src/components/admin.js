@@ -50,8 +50,14 @@ this.setState({
 }
 
 getUser = async () =>{
-   const data = await this.fetch();
+    try{
+  const data = await this.fetch();
     this.setState({ loading: false, user: data.data  });
+    }
+    catch(error){
+console.log(error);
+    }
+ 
 }
 
     render(){

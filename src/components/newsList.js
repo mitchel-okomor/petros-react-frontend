@@ -33,9 +33,14 @@ this.setState({error});
 }
 
 getArticles = async () =>{
-    const data = await this.fetch();
-    console.log("data is: " +data.data[0]);
+    try{
+   const data = await this.fetch();
     this.setState({ loading: false, articles: data.data });
+    }
+    catch(error){
+console.log(error);
+    }
+ 
 }
 
     render(){

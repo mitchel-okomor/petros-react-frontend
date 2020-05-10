@@ -13,10 +13,8 @@ const withAuth = AuthComponent => {
     }
     
     componentDidMount () {
-      console.log ('inside HOC');
       //check if it's still authenticated
       const isConfirmed = checkLogin ();
-      console.log ('Auth is Confirm: ' + isConfirmed);
 
       if (!isConfirmed) {
         history.push ('/login');
@@ -28,15 +26,12 @@ const withAuth = AuthComponent => {
     }
 
     render () {
-      console.log (this.state.isAutenticated);
       if (this.state.isAutenticated) {
-        console.log ('Authenticated');
         return (
           /* component that is currently being wrapper(App.js) */
           <AuthComponent />
         );
       } else {
-        console.log ('not Authenticated!');
         return null;
       }
     }

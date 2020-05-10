@@ -5,7 +5,6 @@ import logout from './helpers/Logout';
 
 
 const Header = (props)=>{
-    console.log(props);
     return(
 <header>
     <div className="header-bar" >

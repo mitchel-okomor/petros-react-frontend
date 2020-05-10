@@ -34,9 +34,7 @@ componentDidMount(){
   getArticles = async () =>{
       const data = await this.fetch();
       const stateData=data.data[0];
-      console.log("data is: " + JSON.stringify( ));
       this.setState(stateData);
-      console.log(this.state);
 
   }
 
@@ -53,7 +51,6 @@ componentDidMount(){
 
 handleSubmit = async event => {
 console.log(this.state);
-const data = this.state;
 try{
   const fd = new FormData();
   fd.append("title", this.state.title);
@@ -106,12 +103,12 @@ alert(error);
         </div>
 <div>
           <label htmlFor="description" >body:</label> <br />
-          <input placeholder="Enter description"
+          <textarea placeholder="Enter description"
           name="description"
             value={this.state.description}
             onChange={this.handleChange}  
             required
-       />
+       > </textarea>
 </div>
 <div>
           <label htmlFor="file" >Image Upload:</label> <br />

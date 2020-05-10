@@ -24,8 +24,6 @@ class News extends React.Component{
     
  
 handleSubmit = async event => {
-  console.log(this.state);
-  const data = this.state;
   try{
     const fd = new FormData();
     fd.append("title", this.state.title);
@@ -75,12 +73,12 @@ handleSubmit = async event => {
         </div>
 <div>
           <label htmlFor="description" >body:</label> <br />
-          <input placeholder="Enter description"
+          <textarea placeholder="Enter description"
           name="description"
             value={this.state.value}
             onChange={this.handleChange}  
             required
-       />
+       ></textarea>
 </div>
 <div>
           <label htmlFor="file" >Image Upload:</label> <br />
